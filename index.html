@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/1293f4ae32.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="content/img/logo.png" class="logo"> -->
+            <h1 style="font-size: 50px;"><span style="color: #ff004f;letter-spacing: 3px;">V</span>inod.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer (DotNet With Angular)</p>
+            <h1>Hi, I'm <span>Vinod</span> <br> Kumar Pal from India</h1>
+        </div>
+    </div>
+</div>
+<!-- --------------About--------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="content/img/user_vinod.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a results-driven .NET with Angular developer with a proven track record of creating high-performance 
+                    web applications that combine the power of the .NET framework with the flexibility and interactivity of Angular. 
+                    With a strong foundation in both back-end and front-end development, I specialize in crafting dynamic and responsive 
+                    solutions that exceed client expectations.</p>                  
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>MVC, ADO.Net, Web API, C#, Entity Framework Core, LINQ, .Net Core, Microservices</li>
+                            <li><span>UI Developement</span><br>HTML, CSS, JavaScript, Jquery, Bootstrap, Angular, TypeScript</li>
+                            <li><span>Database</span><br>SQL Server</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Technical Lead-Product Developement at Harman Connected Services</li>
+                            <li><span>2020 - 2021</span><br>Consultant at Capgemini Information Technology & Services</li>
+                            <li><span>2019 - 2020</span><br>Application Developer at Ideaplunge Solutions LLP.</li>
+                            <li><span>2017 - 2019</span><br>Dot Net Developer at EvolutionCo Digital & interactive Consultancy Pvt. Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Junior Software Developer at Softage Software Solution Pvt. Ltd.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2011 - 2014</span><br>MCA from Sathyabama University Chennai</li>
+                            <li><span>2008 - 2011</span><br>BCA from Dr. VSICS Kanpur</li>
+                        </ul>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------Services------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developement</h2>
+                <p>Web development for a .NET developer involves creating web applications using the .NET framework and associated technologies. 
+                    </p>
+                <a href="webDevelopment.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI Developement</h2>
+                <p>Angular services are an essential part of building robust and maintainable Angular applications. 
+                    They are responsible for encapsulating and providing functionality that can be shared across different parts of your application. 
+                    Here's a summary of Angular services and their relevance for developers:</p>
+                <a href="UIDevelopment.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design</h2>
+                <p>A SQL developer is a professional who specializes in designing, developing, and maintaining databases using 
+                    the SQL (Structured Query Language) for managing and manipulating data. Here's a summary of the key 
+                    responsibilities and skills associated with the role of a SQL </p>
+                <a href="DBDevelopment.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------Portfolio----------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="content/img/work-1.png">
+                <div class="layer">
+                    <h3>Total Connect 2.0</h3>
+                    <p>Total Connect is the platform created by Honeywell, also known as Resideo so that customers can control their alarm 
+                        systems remotely. With the assistance of the app, you can remotely arm and disarm the alarm, 
+                        allowing you to control the signal from anywhere without having to rely on someone else to turn it off.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="content/img/work-2.png">
+                <div class="layer">
+                    <h3>HeartLand InfoCentral - (Global Payments)</h3>
+                    <p>InfoCentral is a web application for the Global payments client  which we developed based on the 
+                        software requirements. This application  is used by Merchants to handle to transaction. When any 
+                        transaction happened then merchants can see that transaction in the application. Admin can create 
+                        a new merchants and merchants can edit, update, view the account. Merchants can validate the 
+                        transaction by week, month and year. They can process the batch of the transaction</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="content/img/work-3.png">
+                <div class="layer">
+                    <h3>P&G India (DMS)</h3>
+                    <p>P&G India is a web application for the P&G client.  P&G is biggest FMCG distributor across India.
+                        This application is for the distributor where distributor is uploading the details like - product     
+                                         details, user details, route details of the user, retailer details etc with Electronics Engineering 
+                                        device. And seller is going to sell the product to the retailer according to their route plan.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------------Contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> pal.vinod807@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 078273 51309</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vinod.pal.7798" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Vinod_Pal28" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vinod-kumar-pal-54193575/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="content/img/VinodPal_DotNetDeveloper.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vinod. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz8ArZYD1RUwjMp8U9K_uaYwSgwbC6APRc528c29Wvkt7ORFyaTyqN7kzXVY1QxHZV6/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully";
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
